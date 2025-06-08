@@ -167,7 +167,7 @@ function SearchForm({ searchTerm }) {
   };
 
   return (
-    <Form className="w-full relative z-50" ref={formRef}>
+    <Form className="w-full relative z-40" ref={formRef}>
       <div className="relative">
         <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-amber-500">
           <svg
@@ -197,9 +197,9 @@ function SearchForm({ searchTerm }) {
           placeholder="Search for movies..."
           className={`w-full bg-gray-900/60 text-white border-2 ${
             isFocused ? "border-amber-600" : "border-amber-900/20"
-          } rounded-xl py-3.5 pl-12 ${
-            query ? "pr-36" : "pr-20"
-          } text-lg placeholder-gray-500 outline-none
+          } rounded-xl py-2.5 pl-12 ${
+            query ? "pr-32" : "pr-18"
+          } text-base placeholder-gray-500 outline-none
           transition-all duration-300 ease-in-out shadow-inner backdrop-blur-sm hover:border-amber-800/50 focus:shadow-amber-900/30 focus:shadow-lg`}
           autoComplete="off"
         />
@@ -208,7 +208,7 @@ function SearchForm({ searchTerm }) {
           <button
             type="button"
             onClick={handleClear}
-            className="absolute right-20 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-400 transition-all duration-200 p-1.5 rounded-lg hover:bg-gray-800/50"
+            className="absolute right-16 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-400 transition-all duration-200 p-1 rounded-lg hover:bg-gray-800/50"
             aria-label="Clear search"
           >
             <svg
@@ -230,8 +230,8 @@ function SearchForm({ searchTerm }) {
 
         <button
           type="submit"
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 
-                    bg-gradient-to-r from-amber-600 to-red-700 text-white px-5 py-2 rounded-lg
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 
+                    bg-gradient-to-r from-amber-600 to-red-700 text-white px-4 py-1.5 rounded-lg
                     hover:from-amber-700 hover:to-red-800 transition-all duration-300 ease-in-out
                     font-medium shadow-lg border border-amber-600/20 hover:shadow-amber-900/40"
         >
@@ -243,7 +243,7 @@ function SearchForm({ searchTerm }) {
       {isFocused && (showSuggestions || (isLoading && query.length >= 2)) && (
         <div
           ref={suggestionsRef}
-          style={{ zIndex: 9999 }}
+          style={{ zIndex: 45 }}
           className="absolute top-full left-0 right-0 mt-2 bg-gray-900/95 backdrop-blur-md border border-amber-900/30 rounded-xl shadow-2xl overflow-hidden animate-fadeIn"
           onMouseDown={(e) => {
             // Prevent input from losing focus when clicking on dropdown

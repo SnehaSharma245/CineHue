@@ -47,14 +47,14 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-amber-950 to-gray-900 text-white pt-20">
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="text-center mb-8">
+      <div className="max-w-5xl mx-auto px-4 py-6">
+        <div className="text-center mb-6">
           <img
-            src="/CineHub_LOGO.png"
-            alt="CineHub Logo"
-            className="mx-auto h-20 w-auto mb-4 drop-shadow-lg"
+            src="/CineHue_LOGO.png"
+            alt="CineHue Logo"
+            className="mx-auto h-16 w-auto mb-3 drop-shadow-lg"
           />
-          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg tracking-tight">
             Explore{" "}
             <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">
               Movies
@@ -62,7 +62,7 @@ function Home() {
           </h1>
         </div>
 
-        <div className="bg-gray-900/60 backdrop-blur-md rounded-xl shadow-2xl p-6 mb-8 border border-amber-900/20 relative z-[100]">
+        <div className="bg-gray-900/60 backdrop-blur-md rounded-xl shadow-2xl p-4 mb-6 border border-amber-900/20 relative z-30">
           <SearchForm searchTerm={data.searchTerm} />
         </div>
 

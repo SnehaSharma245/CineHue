@@ -3,10 +3,10 @@ import React from "react";
 const LoadingSpinner = () => {
   return (
     <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-amber-950 to-gray-900 flex flex-col items-center justify-center z-[9999]">
-      {/* CineHub Logo */}
+      {/* CineHue Logo */}
       <div className="mb-8">
         <span className="text-3xl font-bold bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">
-          CineHub
+          CineHue
         </span>
       </div>
 
