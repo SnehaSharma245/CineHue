@@ -4,7 +4,7 @@ A modern, responsive movie discovery application built with React and React Rout
 
 **🚀 Live Demo: [https://cinehue.vercel.app](https://cinehue.vercel.app)**
 
-![CineHue Logo](./public/CineHue_LOGO.png)
+<img src="./public/CineHue_LOGO.png" alt="CineHue Logo" width="100" />
 
 ## ✨ Features
 
@@ -50,7 +50,7 @@ A modern, responsive movie discovery application built with React and React Rout
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/cinehue.git
+   git clone https://github.com/SnehaSharma245/cinehue.git
    cd cinehue
    ```
 
